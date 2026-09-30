@@ -51,8 +51,6 @@ diagnosis, and delivers evidence-packaged email alerts to the correct team.
 
 ## Architecture
 
-https://chatgpt.com/backend-api/estuary/content?id=file_0000000091f4821187024ec30484b902&ts=497434&p=fs&cid=1&sig=d1a1e3126ec4f9a7d71decec7c80eae1fc880b420794585d205b06b2bded324f&v=0
-
 | Module | Responsibility |
 |--------|---------------|
 | `collector.py` | ICMP ping, SNMP v2c walks (pysnmp 7.x asyncio API) |
