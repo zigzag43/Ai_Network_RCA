@@ -50,31 +50,8 @@ diagnosis, and delivers evidence-packaged email alerts to the correct team.
 ---
 
 ## Architecture
-┌─────────────────────┐
-│ main.py │
-│ orchestration loop │
-└──────────┬──────────┘
-│
-┌───────────────────────────┼───────────────────────────┐
-│ │ │
-▼ ▼ ▼
-┌──────────────┐ ┌──────────────┐ ┌──────────────┐
-│ collector.py │ ────► │ analyzer.py │ ────► │ notifier.py │
-│ ping + snmp │ │ rules + AI │ │ smtp email │
-└──────┬───────┘ └──────┬───────┘ └──────┬───────┘
-│ │ │
-│ ▼ │
-│ ┌──────────────┐ │
-│ │ai_analyzer.py│ │
-│ │ groq api │ │
-│ └──────────────┘ │
-│ │
-▼ ▼
-┌──────────────────────────────────────────────────────────┐
-│ database.py │
-│ SQLite │
-└──────────────────────────────────────────────────────────┘
 
+![Uploading 42c0e9a2-0619-427b-9dda-09075568f33f.png…]()
 
 | Module | Responsibility |
 |--------|---------------|
